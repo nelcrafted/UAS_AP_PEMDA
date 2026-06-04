@@ -19,7 +19,6 @@ struct Mobil {
 const int MAX_PARKIR = 20;
 vector<Mobil> daftarMobil;
 
-// Function hitung durasi parkir
 void tampilDurasi(time_t waktuMasuk) {
     time_t sekarang = time(0);
     int detik = difftime(sekarang, waktuMasuk);
@@ -35,7 +34,6 @@ void tampilDurasi(time_t waktuMasuk) {
          << detik << " detik";
 }
 
-// Function tambah kendaraan
 void tambahMobil() {
     int jumlah;
 
@@ -70,7 +68,6 @@ void tambahMobil() {
     cout << "\nData mobil berhasil ditambahkan!\n";
 }
 
-// Function tampil daftar kendaraan
 void tampilMobil() {
     if (daftarMobil.empty()) {
         cout << "\nBelum ada mobil yang parkir.\n";
@@ -94,7 +91,6 @@ void tampilMobil() {
     }
 }
 
-// Function pembayaran
 void pembayaran() {
     if (daftarMobil.empty()) {
         cout << "\nTidak ada mobil di parkiran.\n";
@@ -115,7 +111,7 @@ void pembayaran() {
             time_t sekarang = time(0);
             int detik = difftime(sekarang, daftarMobil[i].waktuMasuk);
 
-            // Tarif Rp100 per menit
+            
             int biaya = (detik / 60) * 100;
 
             if (biaya == 0)
@@ -135,7 +131,6 @@ void pembayaran() {
     }
 }
 
-// Function menu
 void menu() {
     int opsi;
 
