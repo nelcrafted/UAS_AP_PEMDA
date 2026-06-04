@@ -1,6 +1,6 @@
 #include <iostream>
 #include <vector>
-g namespace std;
+using namespace std;
 
 struct Barang{
     string kode;
