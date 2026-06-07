@@ -43,7 +43,6 @@ void tambahBarang(){
     cout << "Barang berhasil ditambahkan!\n";
 }
 
-// Tampilkan Semua Barang
 void tampilkanBarang(){
 
     if(daftarBarang.empty()){
@@ -60,7 +59,7 @@ void tampilkanBarang(){
     }
 }
 
-// Cari Barang Termahal
+
 void cariBarangTermahal(){
 
     if(daftarBarang.empty()){
@@ -81,7 +80,7 @@ void cariBarangTermahal(){
     cout << "Stok  : " << daftarBarang[index].stok << endl;
 }
 
-// Hitung Total Inventaris
+
 void hitungTotalInventaris(){
 
     int total = 0;
@@ -91,7 +90,7 @@ void hitungTotalInventaris(){
     cout << "\nTotal Nilai Inventaris = Rp "
          << total << endl;
 }
-// Cek Restock
+
 void cekRestock(){
     bool ada = false;
     cout << "\n=== BARANG PERLU RESTOCK ===\n";
@@ -111,7 +110,7 @@ void cekRestock(){
         cout << "Tidak ada barang yang perlu direstock.\n";
     }
 }
-// Update Stok (Pointer)
+
 void updateStok(){
     string kode;
     cout << "\nMasukkan kode barang : ";
